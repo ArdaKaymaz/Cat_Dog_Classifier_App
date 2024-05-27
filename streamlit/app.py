@@ -5,7 +5,7 @@ from PIL import Image
 import numpy as np
 import os
 
-model = tf.keras.models.load_model("streamlit/cat_dog_clf_model.h5")
+model = tf.keras.models.load_model("cat_dog_clf_model.keras")
 
 # Set the page configuration
 st.set_page_config(page_title="Cat-Dog Classifier", page_icon="🔎")
