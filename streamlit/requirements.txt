@@ -1,4 +1,0 @@
-streamlit
-pillow
-keras
-tensorflow
