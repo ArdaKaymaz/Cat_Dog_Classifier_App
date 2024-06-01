@@ -1,0 +1,10 @@
+tensorflow==2.15.1
+
+requests==2.32.3
+
+keras==2.15.0
+mlflow==2.13.0
+
+pillow==10.3.0
+matplotlib==3.9.0
+numpy==1.26.4
