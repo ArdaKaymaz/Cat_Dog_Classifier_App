@@ -5,16 +5,21 @@ from tensorflow.keras.models import load_model
 from PIL import Image
 import numpy as np
 import time
+import os
+
+current_directory = os.getcwd()
 
 # Load the pre-trained model
-model = load_model("cat_dog_classification_VGG16_2024_06_01__021235.keras")
+model_path = os.path.join(current_directory, "cat_dog_classification_VGG16_2024_06_01__021235.keras")
+model = load_model(model_path)
 input_shape = (224, 224, 3)
 
 # Set the page configuration
 st.set_page_config(page_title="Cat-Dog Classifier", page_icon="🔎")
 
 # Set and display the cover
-cover_image = Image.open("Meow or Woof.png")
+cover_image_path = os.path.join(current_directory, "meow_or_woof.png")
+cover_image = Image.open(cover_image_path)
 st.image(cover_image, use_column_width=True)
 
 # Add a header and description
