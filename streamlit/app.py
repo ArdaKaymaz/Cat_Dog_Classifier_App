@@ -17,7 +17,7 @@ model_path = os.path.join(current_directory, "cat_dog_clf_VGG16_production_model
 model = load_model_cached(model_path)
 input_shape = (224, 224, 3)
 
-st.set_page_config(page_title="Cat-Dog Classifier", page_icon="🐾🐾")
+st.set_page_config(page_title="Cat-Dog Classifier", page_icon="🐾")
 
 cover_image_path = os.path.join(current_directory, "meow_or_woof.png")
 cover_image = Image.open(cover_image_path)
