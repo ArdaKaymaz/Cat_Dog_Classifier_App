@@ -9,21 +9,20 @@ import os
 
 current_directory = os.getcwd()
 
-# Load the pre-trained model
+@st.cache_resource
+def load_model_cached(model_path):
+    return load_model(model_path)
+
 model_path = os.path.join(current_directory, "cat_dog_clf_VGG16_production_model.h5")
-# model_path = "cat_dog_classification_VGG16_2024_06_01__021235.keras"
-model = load_model(model_path)
+model = load_model_cached(model_path)
 input_shape = (224, 224, 3)
 
-# Set the page configuration
-st.set_page_config(page_title="Cat-Dog Classifier", page_icon="🔎")
+st.set_page_config(page_title="Cat-Dog Classifier", page_icon="🐾🐾")
 
-# Set and display the cover
 cover_image_path = os.path.join(current_directory, "meow_or_woof.png")
 cover_image = Image.open(cover_image_path)
 st.image(cover_image, use_column_width=True)
 
-# Add a header and description
 st.header("Hello, my name is Cat-Dog Classifier!")
 st.divider()
 st.write("I'm here to assist you to classify if it is a dog 🐶 or a cat 🐱!")
