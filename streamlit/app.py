@@ -10,7 +10,7 @@ import os
 current_directory = os.getcwd()
 
 # Load the pre-trained model
-model_path = os.path.join(current_directory, "cat_dog_clf_VGG16_production_model.keras")
+model_path = os.path.join(current_directory, "cat_dog_clf_VGG16_production_model.h5")
 # model_path = "cat_dog_classification_VGG16_2024_06_01__021235.keras"
 model = load_model(model_path)
 input_shape = (224, 224, 3)
