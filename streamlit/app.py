@@ -27,7 +27,6 @@ st.header("Hello, my name is Cat-Dog Classifier!")
 st.divider()
 st.write("I'm here to assist you to classify if it is a dog 🐶 or a cat 🐱!")
 
-
 tab1, tab2 = st.tabs(["Application", "About"])
 
 with tab1:
@@ -38,13 +37,11 @@ with tab1:
 
     if uploaded_image is not None:
         image = Image.open(uploaded_image)
-
         st.image(image, caption='Uploaded Image', width=300)
     else:
         st.write("Please upload an image file.")
 
     pred_but = st.button(label="Predict")
-
 
     def predict_image_category(image, model, input_shape):
         img = image.resize(input_shape[:2])
