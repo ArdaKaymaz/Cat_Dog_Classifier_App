@@ -26,7 +26,7 @@ st.image(cover_image, use_column_width=True)
 
 st.header("Hello, my name is Cat-Dog Classifier!")
 st.divider()
-st.write("I'm here to assist you to classify if it is a dog 🐶 or a cat 🐱!")
+st.write("I'm here to clear up the confusion about whether your pet is a cat 🐱 or a dog 🐶!")
 
 tab1, tab2 = st.tabs(["Application", "About"])
 
