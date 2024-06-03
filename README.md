@@ -6,6 +6,8 @@
 
 <strong>Project Summary:</strong> Cat and Dog Image Classification
 
+<a href="https://catdogclassifierapp.streamlit.app/" target="_blank">App Link</a>
+
 This project focuses on developing an image classification system to distinguish between images of cats and dogs. The workflow involves image preprocessing, model training, and creating app with the best model.
 
 <strong>Image Preprocessing:</strong> To handle the dataset efficiently, the ImageDataGenerator and flow_from_directory functions were utilized for preprocessing and loading the images, reducing computational strain.
