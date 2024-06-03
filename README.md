@@ -12,15 +12,13 @@ This project focuses on developing an image classification system to distinguish
 
 <strong>Model Selection and Fine-tuning:</strong> Transfer learning was employed with MobileNet, VGG16 and ResNet50 pre-trained models as the base architecture. Fine-tuning was performed using the dataset to enhance performance on the specific task.
 
-![model](https://github.com/ArdaKaymaz/cat_dog_classifier_mobilenet/assets/146623362/c63eb873-2d79-4eb2-9027-9612028b09ee)
+![Model predictions](https://github.com/ArdaKaymaz/Cat_Dog_Classifier_App/assets/146623362/128c643b-f76c-4165-aae3-0fa791a1ba16)
 
 <strong>Experiment Tracking with MLflow:</strong> MLflow was employed to monitor the training process, log metrics, and register the best-performing models, enabling efficient experiment management.
 
-![mlflow](https://github.com/ArdaKaymaz/cat_dog_classifier_mobilenet/assets/146623362/dbe4b7b1-8f57-49e5-a52a-c9fb49d968cd)
+![mlflow_models](https://github.com/ArdaKaymaz/Cat_Dog_Classifier_App/assets/146623362/2dcfc536-ea32-4a1b-9bb1-f7d30205fade)
 
 <strong>Model Evaluation:</strong> Various performance metrics were used for model evaluation. According to these metrics, VGG16 was chosen for its accuracy on validation data, model size, and prediction duration. While the training duration of VGG16 was the highest among all the models, its advantages are promising in the long run.
-
-![tensorboard](https://github.com/ArdaKaymaz/cat_dog_classifier_mobilenet/assets/146623362/b6e24c46-f6fb-4881-8073-300bbc0005d6)
 
 <strong>Model Deployment:</strong> All the three models were registered to an MLflow server, allowing access via an endpoint. The best model, VGG16, was chosen for production stage and integrated to Streamlit application.
 
