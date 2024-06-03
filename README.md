@@ -12,8 +12,6 @@ This project focuses on developing an image classification system to distinguish
 
 <strong>Model Selection and Fine-tuning:</strong> Transfer learning was employed with MobileNet, VGG16 and ResNet50 pre-trained models as the base architecture. Fine-tuning was performed using the dataset to enhance performance on the specific task.
 
-![Model predictions](https://github.com/ArdaKaymaz/Cat_Dog_Classifier_App/assets/146623362/128c643b-f76c-4165-aae3-0fa791a1ba16)
-
 <strong>Experiment Tracking with MLflow:</strong> MLflow was employed to monitor the training process, log metrics, and register the best-performing models, enabling efficient experiment management.
 
 ![mlflow_models](https://github.com/ArdaKaymaz/Cat_Dog_Classifier_App/assets/146623362/2dcfc536-ea32-4a1b-9bb1-f7d30205fade)
@@ -22,6 +20,6 @@ This project focuses on developing an image classification system to distinguish
 
 <strong>Model Deployment:</strong> All the three models were registered to an MLflow server, allowing access via an endpoint. The best model, VGG16, was chosen for production stage and integrated to Streamlit application.
 
-![test](https://github.com/ArdaKaymaz/cat_dog_classifier_mobilenet/assets/146623362/f1fc342d-92c5-4f2f-bcb9-3ba89d20c03e)
+![Model predictions](https://github.com/ArdaKaymaz/Cat_Dog_Classifier_App/assets/146623362/128c643b-f76c-4165-aae3-0fa791a1ba16)
 
 This structured approach enabled the development of a robust image classification system for distinguishing between cats and dogs, with the ability to track experiments, deploy models, and make predictions in real-world scenarios.
