@@ -22,7 +22,7 @@ input_shape = (224, 224, 3)
 
 cover_image_path = os.path.join(current_directory, "meow_or_woof.png")
 cover_image = Image.open(cover_image_path)
-st.image(cover_image, use_column_width=True)
+st.image(cover_image, use_container_width=True)
 
 st.header("Hello, my name is Cat-Dog Classifier!")
 st.divider()
